@@ -1,0 +1,280 @@
+/* Navbar section */
+.nav {
+  font-weight: normal;
+  font-style: normal;
+  position: absolute;
+  left: 0px;
+  height: 65px;
+  background-color: #ffffff00;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav div.main_list {
+  width: 600px;
+  height: 65px;
+  position: center;
+}
+
+.nav div.main_list ul {
+  margin: 0;
+  padding: 0;
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.nav div.main_list ul a {
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 255);
+  line-height: 100px;
+  text-transform: uppercase;
+  background-position: center;
+  width: 120px;
+  height: 65px;
+}
+
+@media only screen and (min-width: 620px) {
+
+  .phoneimg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .nav div.main_list ul a {
+    display: block;
+    padding: 0% 3%;
+    text-align: center;
+    width: 105px;
+    height: 125px;
+    font-size: 90%;
+  }
+
+  .pcimg {
+    display: none;
+  }
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background: #e6e6e6;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/* ==========================================================================
+   Start of custom Webflow CSS
+   ========================================================================== */
+@media only screen and (min-width: 775px) {
+  body {
+    font-family: Montserrat, sans-serif;
+    color: #1a1b1f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+
+  }
+
+  a {
+    display: block;
+    transition: opacity 200ms ease;
+    color: #1a1b1f;
+    text-decoration: underline;
+    position: center;
+  }
+
+  a:hover {
+    color: #32343a;
+  }
+
+  a:active {
+    color: #43464d;
+  }
+
+  .intro-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 700px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-size: 90%;
+    background-image: url("#");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding-top: 4%;
+  }
+
+  .fotojezelf {
+    padding-left: 70%;
+    padding-top: 7%;
+  }
+
+  .infojezelf {
+    display: center;
+    padding-top: 2%;
+    padding-left: 20%;
+  }
+
+
+  .menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding-top: 7%;
+  }
+
+  .main {
+    float: left;
+    width: 60%;
+    padding: 7% 3%;
+    text-align: left;
+  }
+
+  .porttekst {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 35%;
+    max-width: 100%;
+  }
+
+  .portfolio {
+    float: none;
+    width: 40%;
+    text-align: center;
+    padding-top: 3%;
+    padding-right: 50%;
+    padding-left: 50%;
+  }
+
+  @media only screen and (max-width: 620px) {
+
+    /* For mobile phones: */
+    .menu,
+    .main {
+      width: 100%;
+    }
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 9% 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .contact {
+    float: left;
+    padding: 9% 40% 50%;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .contact {
+    float: left;
+    padding: 25% 40% 50%;
+  }
+
+  .porttekst {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding-top: 30%;
+    padding-left: 10%;
+    max-width: 100%;
+  }
+
+  .portfolio {
+    float: none;
+    width: 50%;
+    text-align: center;
+    padding-top: 20%;
+    padding-right: 50%;
+    padding-left: 50%;
+  }
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
